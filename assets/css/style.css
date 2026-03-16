@@ -11,6 +11,12 @@
     --ep-white: #FFFFFF;
 }
 
+/* Añade un degradado sutil en el contenedor del texto */
+.caption-data {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+    /* Esto oscurece el lado izquierdo (donde empieza el texto) y se aclara hacia la derecha */
+    padding: 20px; /* Dale un poco de aire al texto */
+}
 
 /* Author:WebThemez
  * Author URI:http://webthemez.com
