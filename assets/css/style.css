@@ -1,3 +1,17 @@
+:root {
+    /* Colores Principales EcoPulse */
+    --ep-green-primary: #108981;
+    --ep-dark-carbon: #1F2937;
+    --ep-electric-blue: #3B82F6;
+
+    /* Colores de Interfaz y Texto */
+    --ep-bg-light: #F9FAFB;
+    --ep-text-main: #111827;
+    --ep-text-muted: #687280;
+    --ep-white: #FFFFFF;
+}
+
+
 /* Author:WebThemez
  * Author URI:http://webthemez.com
  * License: Creative Commons Attribution 3.0 License (https://creativecommons.org/licenses/by/3.0/)
@@ -7,6 +21,12 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6, .brand {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+}
+
 .brand {
 	font-family: 'Raleway', sans-serif;
 }
@@ -57,10 +77,10 @@ h1 span,
 h2 span,
 h3 span,
 h4 span {
-	color: #DB0A61;
+	color: var(--ep-green-primary);
 }
 .colored {
-	color: #DB0A61;
+	color: var(--ep-green-primary);
 }
 a {
 	color: #55acee;
@@ -148,7 +168,7 @@ blockquote {
 	z-index: 2;
 }
 .subfooter {
-	background-color: #DA095F;
+	background-color: var(--ep-dark-carbon);
 	padding: 40px 0;
 }
 .subfooter a {
@@ -170,12 +190,12 @@ color: #FF89BA;
 }
 .btn-primary {
 color: #fff;
-background-color: #BD0451;
+background-color: var(--ep-green-primary);
 border:0px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
 color: #fff;
-background-color: #E00A63;
+background-color: var(--ep-dark-carbon);
 border:0px;
 }
 .transprant-bg {
@@ -231,7 +251,7 @@ border:0px;
 	z-index: 2;
 	width: 100%;
 	height: 100%;
-	background-color: #DB0A61;
+	background-color: var(--ep-green-primary);
 }
 .transprant-bg.blue:after {
 	background-color: rgba(85, 172, 238, 0.7);
@@ -254,18 +274,21 @@ background: transparent;
 }
 button.cta-button {
 font-size: 16px;
-line-height: 16px;
-border: 1px solid #fff;
-padding: 20px 42px;
-border-radius: 4px;
-font-family: 'Raleway';
-font-weight: 600;
-transition: background 0.3s, border-color 0.3s;
-margin-top:20px;
+    line-height: 16px;
+    border: none; /* Quitamos el borde blanco antiguo */
+    padding: 20px 42px;
+    border-radius: 4px; /* Obligatorio */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    background-color: var(--ep-green-primary); /* Obligatorio */
+    color: var(--ep-white); /* Obligatorio */
 }
 button.cta-button:hover{
-background:#fff;
-color:#000;
+background-color: var(--ep-dark-carbon); /* Obligatorio */
+    color: var(--ep-white);
+    transform: scale(1.05); /* Obligatorio */
 }
 /* Misc
 ----------------------------------------------------------------------------- */
@@ -358,14 +381,16 @@ text-align:center;
 	transition: all 0.2s ease-in-out;
 }
 .btn-default {
-	color: #FFFFFF;
-	background: #E00A63;
-	border: 0;
+color: var(--ep-white);
+    background-color: var(--ep-green-primary);
+    border: 0;
+    border-radius: 4px; /* Añadimos el border-radius */
 }
 .btn-default:hover {
-	color: #ffffff;
-	background-color: #BB0A53;
-	border: 0;
+color: var(--ep-white);
+    background-color: var(--ep-dark-carbon);
+    border: 0;
+    transform: scale(1.05); /* Añadimos el scale */
 }
 
 /* Collapse
@@ -397,7 +422,7 @@ text-align:center;
 	display: inline-block;
 	width: 100%;
 	background-color: #fff;
-	color: #DB0A61;
+	color: var(--ep-green-primary);
 	position: relative;
 	text-decoration: none;
 	border: #ECECEC 1px solid;
@@ -423,7 +448,7 @@ text-align:center;
 .panel-heading a:hover {
 	text-decoration: none;
 	background-color: #FFFFFF;
-	color: #DB0A61;
+	color: var(--ep-green-primary);
 }
 .panel-title a i {
 	padding-right: 10px;
@@ -436,8 +461,8 @@ text-align:center;
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus,
 .nav-pills > li > a:hover {
-	background-color: #DB0A61;
-	border-color: #DB0A61;
+	background-color: var(--ep-green-primary);
+	border-color: var(--ep-green-primary);
 	color: #ffffff;
 }
 .nav-pills > li > a {
@@ -526,11 +551,11 @@ padding: 10px 0;
 }
 .main-navigation .navbar-default .navbar-nav > li.active > a {
 	background-color: transparent;
-	color: #DB0A61;
+	color: var(--ep-green-primary);
 }
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
-	color: #DB0A61;
+	color: var(--ep-green-primary);
 }
 
 /* carousel */
@@ -821,7 +846,7 @@ border-radius: 50%;
 }
 .isotope-item .btn-default {
 	color: #FFFFFF;
-	background: rgba(219, 10, 97, 0.69);
+	background: rgba(16, 137, 129, 0.69);
 	margin-top: -36px;
 	z-index: 2;
 	position: relative;
@@ -850,7 +875,7 @@ border-radius: 50%;
 	bottom: -1px;
 	left: 0;
 	right: -1px;
-	background-color: rgba(219, 10, 97, 0.78);
+	background-color: rgba(16, 137, 129, 0.78);
 	cursor: pointer;
 	overflow: hidden;
 	opacity: 0;
