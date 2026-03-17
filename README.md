@@ -1,7 +1,9 @@
 EcoPulse Dynamics - Proyecto LMSGI
-![alt text](assets/img/captura-web.png)
+![Vista previa de la web](assets/img/captura-web.png)
 
-
+## 🌐 Enlaces del Proyecto
+* **URL del Proyecto:** [Sustituye esto por el enlace a tu web subida]
+* **Plantilla Original:** [Sustituye esto por el enlace de la plantilla base]
 
 📝 Descripción
 Adaptación, limpieza y optimización de una plantilla web para la empresa tecnológica EcoPulse Dynamics, especializada en Inteligencia Artificial aplicada a la energía.
