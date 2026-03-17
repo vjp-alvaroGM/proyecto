@@ -1,5 +1,5 @@
 EcoPulse Dynamics - Proyecto LMSGI
-![alt text](img/captura-web.png)
+![alt text](assets/img/captura-web.pnga)
 
 
 
